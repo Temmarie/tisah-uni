@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* ...existing code... */
+
+html,
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(49, 46, 129, 1) 0%,
+    rgba(79, 70, 229, 1) 100%
+  );
+}
+
+/* Card Gradient */
+.card-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(49, 46, 129, 0.85) 0%,
+    rgba(37, 35, 94, 0.85) 50%,
+    rgba(79, 70, 229, 0.85) 100%
+  );
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #6366f1; /* Indigo-500 */
+}
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 4s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* 
+      .animate-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+      .animate-fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      } */
