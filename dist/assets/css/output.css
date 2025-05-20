@@ -685,9 +685,6 @@
       background-color: color-mix(in oklab, var(--color-indigo-900) 50%, transparent);
     }
   }
-  .bg-indigo-950 {
-    background-color: var(--color-indigo-950);
-  }
   .bg-transparent {
     background-color: transparent;
   }
@@ -988,9 +985,6 @@
   }
   .text-indigo-900 {
     color: var(--color-indigo-900);
-  }
-  .text-indigo-950 {
-    color: var(--color-indigo-950);
   }
   .text-slate-300 {
     color: var(--color-slate-300);
