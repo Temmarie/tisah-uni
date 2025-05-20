@@ -3,33 +3,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  // Scroll hide/show logic
+  // Scroll hide/show logic (works on all screens)
   let lastScrollTop = 0;
   window.addEventListener("scroll", () => {
     const currentScroll =
       window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScroll > lastScrollTop && currentScroll > 100) {
+    if (navbarScroll && currentScroll > lastScrollTop && currentScroll > 100) {
       navbarScroll.classList.add("opacity-0", "-translate-y-full");
       navbarScroll.classList.remove("opacity-100", "translate-y-0");
-    } else {
+    } else if (navbarScroll) {
       navbarScroll.classList.remove("opacity-0", "-translate-y-full");
       navbarScroll.classList.add("opacity-100", "translate-y-0");
     }
     lastScrollTop = Math.max(currentScroll, 0);
   });
 
-  // Hamburger toggle
-  mobileMenuButton?.addEventListener("click", () => {
-    const isHidden = mobileMenu.classList.toggle("hidden");
-    mobileMenuButton.setAttribute("aria-expanded", !isHidden);
-  });
-
-  // Close menu on link click
-  document.querySelectorAll("#mobile-menu a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-      mobileMenuButton.setAttribute("aria-expanded", "false");
+  // Hamburger toggle (mobile only, but safe on all screens)
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+      mobileMenuButton.setAttribute("aria-expanded", String(!isHidden));
     });
+  }
+
+  // Close menu on link click (mobile only, but safe on all screens)
+  if (mobileMenu && mobileMenuButton) {
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // Optional: Hide mobile menu if window is resized to desktop
+  window.addEventListener("resize", () => {
+    if (
+      window.innerWidth >= 768 &&
+      mobileMenu &&
+      !mobileMenu.classList.contains("hidden")
+    ) {
+      mobileMenu.classList.add("hidden");
+      if (mobileMenuButton) {
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+      }
+    }
   });
 
   // Testimonial Carousel
@@ -42,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showTestimonial(idx) {
     testimonials.forEach((el, i) => {
       el.classList.toggle("active", i === idx);
-      dots[i].classList.toggle("active", i === idx);
+      if (dots[i]) dots[i].classList.toggle("active", i === idx);
     });
     current = idx;
   }
@@ -67,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Slideshow
   const slideshow = document.querySelector(".slideshow");
-  if (slideshow) {
+  if (slideshow && slideshow.children.length > 0) {
     const images = slideshow.children;
     let currentImage = 0;
 
@@ -88,22 +106,20 @@ document.addEventListener("DOMContentLoaded", () => {
     images[0].style.transform = "scale(1.1)";
   }
 
-  const elements = document.querySelectorAll(".fade-up");
-
+  // Fade-up animation on scroll
+  const fadeUpElements = document.querySelectorAll(".fade-up");
   const onScroll = () => {
     const triggerBottom = window.innerHeight * 0.85;
-
-    elements.forEach((el) => {
+    fadeUpElements.forEach((el) => {
       const boxTop = el.getBoundingClientRect().top;
-
       if (boxTop < triggerBottom) {
         el.classList.add("visible");
       }
     });
   };
-
   window.addEventListener("scroll", onScroll);
   onScroll(); // Trigger once on load
+
   // Animation on scroll
   const animateOnScroll = () => {
     const elements = document.querySelectorAll(".animate-on-scroll");
@@ -115,7 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   };
-
   window.addEventListener("scroll", animateOnScroll);
   animateOnScroll(); // Trigger once on load
 });
