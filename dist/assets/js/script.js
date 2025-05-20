@@ -1,38 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar scroll behavior
   const navbarScroll = document.getElementById("navbar-scroll");
-  if (navbarScroll) {
-    let lastScrollTop = 0;
-    window.addEventListener("scroll", () => {
-      const currentScroll =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScroll > lastScrollTop && currentScroll > 100) {
-        navbarScroll.classList.add("opacity-0", "-translate-y-full");
-        navbarScroll.classList.remove("opacity-100", "translate-y-0");
-      } else {
-        navbarScroll.classList.remove("opacity-0", "-translate-y-full");
-        navbarScroll.classList.add("opacity-100", "translate-y-0");
-      }
-      lastScrollTop = Math.max(currentScroll, 0);
-    });
-  }
-
-  // Mobile menu toggle
   const mobileMenuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
-  if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
 
-  // Close mobile menu on link click
-  const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
-  mobileMenuLinks.forEach((link) => {
+  // Scroll hide/show logic
+  let lastScrollTop = 0;
+  window.addEventListener("scroll", () => {
+    const currentScroll =
+      window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
+      navbarScroll.classList.add("opacity-0", "-translate-y-full");
+      navbarScroll.classList.remove("opacity-100", "translate-y-0");
+    } else {
+      navbarScroll.classList.remove("opacity-0", "-translate-y-full");
+      navbarScroll.classList.add("opacity-100", "translate-y-0");
+    }
+    lastScrollTop = Math.max(currentScroll, 0);
+  });
+
+  // Hamburger toggle
+  mobileMenuButton?.addEventListener("click", () => {
+    const isHidden = mobileMenu.classList.toggle("hidden");
+    mobileMenuButton.setAttribute("aria-expanded", !isHidden);
+  });
+
+  // Close menu on link click
+  document.querySelectorAll("#mobile-menu a").forEach((link) => {
     link.addEventListener("click", () => {
-      if (mobileMenu) {
-        mobileMenu.classList.add("hidden");
-      }
+      mobileMenu.classList.add("hidden");
+      mobileMenuButton.setAttribute("aria-expanded", "false");
     });
   });
 
@@ -92,6 +88,22 @@ document.addEventListener("DOMContentLoaded", () => {
     images[0].style.transform = "scale(1.1)";
   }
 
+  const elements = document.querySelectorAll(".fade-up");
+
+  const onScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elements.forEach((el) => {
+      const boxTop = el.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        el.classList.add("visible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // Trigger once on load
   // Animation on scroll
   const animateOnScroll = () => {
     const elements = document.querySelectorAll(".animate-on-scroll");

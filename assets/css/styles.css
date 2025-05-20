@@ -115,13 +115,13 @@ body {
   transform: scale(1.1);
 }
 
-/* 
-      .animate-fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-      }
-      .animate-fade-in.show {
-        opacity: 1;
-        transform: translateY(0);
-      } */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

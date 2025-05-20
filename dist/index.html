@@ -23,7 +23,6 @@
 
   <body class="bg-black text-white">
     <!-- Header/Navbar -->
-
     <header
       id="navbar-scroll"
       class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
@@ -34,6 +33,7 @@
         <!-- Logo + Brand -->
         <a href="index.html" class="flex items-center space-x-2">
           <div class="p-2">
+            <!-- Your SVG -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -54,8 +54,9 @@
           </span>
         </a>
 
-        <!-- Nav Links + Button -->
+        <!-- Nav + Hamburger -->
         <nav class="flex items-center space-x-6">
+          <!-- Desktop Nav -->
           <div class="hidden md:flex items-center space-x-6">
             <a
               href="index.html"
@@ -89,25 +90,24 @@
             >
             <a
               href="tel:01474612085"
-              class="nav_link py-2 text-white no-underline hover:text-indigo-500 flex items-center space-x-2"
+              class="py-2 text-white no-underline hover:text-indigo-500 flex items-center space-x-2"
             >
-              <i class="fas fa-phone"></i>
-              <span>01474 612085</span>
+              <i class="fas fa-phone"></i><span>01474 612085</span>
             </a>
             <a
               href="apply.html"
               class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
             >
-              Get Started
+              Apply
             </a>
           </div>
 
-          <!-- Mobile Menu Button -->
+          <!-- Hamburger (Visible on md and below) -->
           <button
             id="mobile-menu-button"
-            class="md:hidden text-white text-2xl"
-            onclick="toggleMenu()"
-            style="background-color: transparent; border: 0"
+            class="md:hidden text-white text-2xl focus:outline-none"
+            aria-label="Toggle menu"
+            aria-expanded="false"
           >
             <i class="fas fa-bars"></i>
           </button>
@@ -148,19 +148,16 @@
         >
         <a
           href="tel:01474612085"
-          class="nav_link block py-2 text-white no-underline hover:text-yellow-400 flex items-center space-x-2"
+          class="flex items-center space-x-2 text-white hover:text-yellow-400"
         >
-          <i class="fas fa-phone"></i>
-          <span>01474 612085</span>
+          <i class="fas fa-phone"></i><span>01474 612085</span>
         </a>
         <a
           href="apply.html"
-          class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
+          class="block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md"
         >
-          Get Started
+          Apply
         </a>
-
-        <!-- Social Icons -->
         <div class="flex space-x-4 pt-4">
           <a href="#" class="text-white hover:text-indigo-500"
             ><i class="fab fa-facebook-f"></i
@@ -189,22 +186,22 @@
               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 active"
             />
             <img
-              src="https://res.cloudinary.com/temmarie/image/upload/v1747598926/hero-main_lbpt6g.webp"
+              src="https://res.cloudinary.com/temmarie/image/upload/v1747692298/architect-history-victorian-famous-tower_lbamew.webp"
               alt="Image 2"
               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
             />
             <img
-              src="https://res.cloudinary.com/temmarie/image/upload/v1747598915/conesss_apdaqw.webp"
+              src="https://res.cloudinary.com/temmarie/image/upload/v1747690896/group-diverse-grads-throwing-caps-up-sky_zkqgds.webp"
               alt="Image 3"
               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
             />
             <img
-              src="https://res.cloudinary.com/temmarie/image/upload/v1747598935/road-side_qnm20w.webp"
+              src="https://res.cloudinary.com/temmarie/image/upload/v1747692300/friends-learning-study-group_m7alfr.webp"
               alt="Image 4"
               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
             />
             <img
-              src="https://res.cloudinary.com/temmarie/image/upload/v1747598914/big-trailer_xwieoq.webp"
+              src="https://res.cloudinary.com/temmarie/image/upload/v1747692299/english-books-stacks-table-working-space_jrk67e.webp"
               alt="Image 5"
               class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
             />
@@ -291,10 +288,13 @@
 
             <!-- Text Content -->
             <div class="space-y-6">
+              <p class="font-extrabold text-xl leading-relaxed text-indigo-700">
+                Your Pathway to Top UK Universities – British Council Approved!!
+              </p>
+              <br />
               <p
                 class="text-gray-500/80 text-base sm:text-lg md:text-xl leading-relaxed"
               >
-                Your Pathway to Top UK Universities – British Council Approved
                 At TISAH UK Pathways, we’re passionate about guiding
                 international students toward academic success in the UK. As a
                 British Council-approved education partner, we’re here to help
@@ -322,7 +322,11 @@
       <section class="py-16 bg-black min-h-screen">
         <div class="container mx-auto px-4">
           <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-bold mb-4 uppercase">Our Services</h2>
+            <h2
+              class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent mb-4 uppercase"
+            >
+              Our Services
+            </h2>
             <p class="text-white/70">
               Comprehensive support for your UK education journey from
               application to arrival
