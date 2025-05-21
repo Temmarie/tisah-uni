@@ -50,6 +50,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Navigation link active state
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Set active link based on current URL
+  function setActiveNavLink() {
+    const currentPath = window.location.pathname.split("/").pop();
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      const linkPath = link.getAttribute("href");
+      if (
+        linkPath === currentPath ||
+        (linkPath === "index.html" &&
+          (currentPath === "" || currentPath === "/"))
+      ) {
+        console.log("Activating link:", linkPath); // <-- Add this
+        link.classList.add("active");
+      }
+    });
+  }
+
+  // Run on load
+  setActiveNavLink();
+
+  // Also allow manual override on click (for SPA-like navigation)
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+
   // Testimonial Carousel
   const testimonials = document.querySelectorAll(
     "#testimonial-carousel .testimonial"
