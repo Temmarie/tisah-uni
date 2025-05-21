@@ -11,7 +11,7 @@ let universities = [];
 function renderUniversities(data) {
   universityList.innerHTML = "";
   if (data.length === 0) {
-    universityList.innerHTML = `<p class="text-gray-600 col-span-full text-center">No universities match your criteria.</p>`;
+    universityList.innerHTML = `<p class="text-white/70  text-3xl p-5 col-span-full text-center">No universities match your criteria.</p>`;
     return;
   }
 
