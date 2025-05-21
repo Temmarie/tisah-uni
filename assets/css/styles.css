@@ -11,6 +11,20 @@ body {
   padding: 0;
 }
 
+.nav-link.active .nav-link,
+.nav-link:hover {
+  color: #6366f1 !important;
+}
+
+.nav-link.active {
+  color: #6366f1 !important;
+  font-weight: 900; /* Set your desired mint color */
+}
+
+.nav-link {
+  color: white; /* Set the color for all links */
+}
+
 /* Hero Gradient */
 .hero-gradient {
   background: linear-gradient(
