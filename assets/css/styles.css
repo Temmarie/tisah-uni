@@ -24,6 +24,12 @@ body {
   color: white; /* Set the color for all links */
 }
 
+.footer-link:hover {
+  color: white;
+  font-weight: 900;
+  text-decoration: wavy; /* Set the color for all links */
+}
+
 /* Hero Gradient */
 .hero-gradient {
   background: linear-gradient(
@@ -75,7 +81,7 @@ body {
 }
 
 .dot.active {
-  background-color: #6366f1; /* Indigo-500 */
+  background-color: white; /* Indigo-500 */
 }
 /* Animations */
 @keyframes fadeIn {
