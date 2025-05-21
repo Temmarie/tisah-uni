@@ -1,201 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UK University Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-900 text-white font-sans">
-    <!-- Hero Section -->
-    <section
-      class="bg-[url('/path-to-hero-image.jpg')] bg-cover bg-center h-screen flex items-center justify-center text-center relative"
+<a href="index.html" class="flex items-center space-x-2">
+  <div class="p-2">
+    <!-- Your SVG -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      fill="white"
+      transform="rotate(180)"
+      viewBox="0 0 32 32"
     >
-      <div class="absolute inset-0 bg-black/70"></div>
-      <div class="relative z-10 max-w-2xl px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">
-          Start Your UK University Journey With Confidence
-        </h1>
-        <p class="text-lg md:text-xl mb-6">
-          95% of our students receive offers from their top-choice universities.
-        </p>
-        <div class="space-x-4">
-          <a
-            href="#cta"
-            class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl"
-            >Get Started</a
-          >
-          <a href="#services" class="border border-white px-6 py-3 rounded-xl"
-            >Free Consultation</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 px-6 md:px-20 bg-gray-800">
-      <div class="flex flex-col md:flex-row items-center gap-10">
-        <img
-          src="/path-to-team-photo.jpg"
-          alt="Our Team"
-          class="w-full md:w-1/2 rounded-2xl shadow-lg"
-        />
-        <div class="md:w-1/2">
-          <h2 class="text-3xl font-bold mb-4">About Us</h2>
-          <p class="mb-4">
-            With over a decade of experience helping international students gain
-            admission to top UK universities, we provide expert, end-to-end
-            support tailored to your goals.
-          </p>
-          <ul class="space-y-2">
-            <li>✅ 12+ Years of Experience</li>
-            <li>🌍 100+ UK University Partners</li>
-            <li>🎯 98% Visa Success Rate</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-6 md:px-20 bg-gray-900">
-      <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">
-            🎓 University & Course Selection
-          </h3>
-          <p>
-            We help match you with programs aligned with your goals and future
-            career prospects.
-          </p>
-        </div>
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">📝 Application Support</h3>
-          <p>
-            Expert support for crafting a strong UCAS or direct application.
-          </p>
-        </div>
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">🗣️ Personal Statement Help</h3>
-          <p>Stand out with a compelling and authentic personal statement.</p>
-        </div>
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">🧾 Scholarship Advice</h3>
-          <p>
-            Access scholarship opportunities to ease your financial journey.
-          </p>
-        </div>
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">📑 Visa Assistance</h3>
-          <p>Step-by-step visa support from certified specialists.</p>
-        </div>
-        <div
-          class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">🏡 Accommodation</h3>
-          <p>Help finding safe, budget-friendly housing near your campus.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="py-20 px-6 md:px-20 bg-gray-800">
-      <h2 class="text-3xl font-bold text-center mb-10">Why Choose Us</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div>
-          <h3 class="text-xl font-semibold mb-2">
-            🌐 Global Expertise, Personal Support
-          </h3>
-          <p>
-            We provide one-on-one counselling and personalised guidance at every
-            step.
-          </p>
-          <ul class="mt-4 space-y-2">
-            <li>✔️ No Agency Fees</li>
-            <li>✔️ 24/7 Student Support</li>
-            <li>✔️ Exclusive University Partnerships</li>
-          </ul>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">📊 Proven Results</h3>
-          <p>
-            Thousands of success stories — from Russell Group offers to full
-            scholarships.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Affiliated Universities Section -->
-    <section id="universities" class="py-20 px-6 md:px-20 bg-gray-900">
-      <h2 class="text-3xl font-bold text-center mb-10">
-        Affiliated Universities
-      </h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div>🎓 Birmingham</div>
-        <div>🎓 Leeds</div>
-        <div>🎓 King’s College</div>
-        <div>🎓 Glasgow</div>
-        <div>🎓 Nottingham</div>
-        <div>🎓 Manchester Met</div>
-        <div>🎓 UWE Bristol</div>
-        <div>🎓 Greenwich</div>
-      </div>
-      <p class="mt-6 text-center">And 90+ more across the UK</p>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 px-6 md:px-20 bg-gray-800">
-      <h2 class="text-3xl font-bold text-center mb-10">Student Testimonials</h2>
-      <div class="grid md:grid-cols-2 gap-10">
-        <div class="bg-gray-900 p-6 rounded-xl shadow">
-          <p class="italic">
-            “Thanks to the team, I got into my dream university. The personal
-            attention and visa help were invaluable.”
-          </p>
-          <p class="mt-4 font-semibold">– Amina A., Nigeria</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-xl shadow">
-          <p class="italic">
-            “They helped me every step of the way, from personal statement to
-            accommodation. Highly recommend!”
-          </p>
-          <p class="mt-4 font-semibold">– Daniel K., Ghana</p>
-        </div>
-      </div>
-      <div class="text-center mt-10">
-        <p>🎯 95% Acceptance | 98% Visa Approval | 4.9★ Average Rating</p>
-      </div>
-    </section>
-
-    <!-- Call-to-Action Section -->
-    <section
-      id="cta"
-      class="py-20 px-6 md:px-20 bg-blue-700 text-white text-center rounded-t-3xl"
-    >
-      <h2 class="text-3xl font-bold mb-4">Start Your UK Study Journey Today</h2>
-      <p class="mb-6">
-        Get a FREE consultation and secure your place at a top UK university.
-      </p>
-      <a
-        href="/apply"
-        class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100"
-        >Book a Free Consultation</a
-      >
-      <p class="mt-4 text-sm">
-        🎁 Limited offer: Free personal statement review for first 100
-        applicants!
-      </p>
-    </section>
-  </body>
-</html>
+      <path
+        d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
+      />
+    </svg>
+  </div>
+  <span
+    class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+  >
+    Tisah
+  </span>
+  <small class="text-white/70 text-lg"
+    >The International Student Admissions Hub</small
+  >
+</a>

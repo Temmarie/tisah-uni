@@ -14,120 +14,136 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-
+  <body class="bg-black text-gray-800 dark:bg-gray-900 dark:text-gray-100">
     <!-- header -->
-<header
-  id="navbar-scroll"
-  class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
->
-  <div
-    class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-10"
-  >
-    <!-- Logo + Brand -->
-    <a href="index.html" class="flex items-center space-x-2">
-      <div class="p-2">
-        <!-- Your SVG -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          fill="white"
-          transform="rotate(180)"
-          viewBox="0 0 32 32"
-        >
-          <path
-            d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
-          />
-        </svg>
-      </div>
-      <span
-        class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+    <header
+      id="navbar-scroll"
+      class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-10"
       >
-        Tisah
-      </span>
-    </a>
+        <!-- Logo + Brand -->
 
-    <!-- Nav + Hamburger -->
-    <nav class="flex items-center space-x-6">
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a
-          href="index.html"
-          class="text-white/80 nav-link transition-colors"
-          aria-current="page"
+        <a href="index.html" class="flex items-center space-x-4">
+          <div class="p-2">
+            <!-- Spade SVG icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              fill="white"
+              transform="rotate(180)"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+            >
+              TISAH
+            </span>
+            <small class="text-white/70 text-sm">
+              The International Student Admissions Hub
+            </small>
+          </div>
+        </a>
+
+        <!-- Nav + Hamburger -->
+        <nav class="flex items-center space-x-6">
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a
+              href="index.html"
+              class="text-white/80 nav-link transition-colors"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-white/80 nav-link transition-colors"
+              >About</a
+            >
+            <a
+              href="courses.html"
+              class="text-white/80 nav-link transition-colors"
+              >Courses</a
+            >
+
+            <a
+              href="contact.html"
+              class="text-white/80 nav-link transition-colors"
+              >Contact</a
+            >
+            <a
+              href="tel:01474612085"
+              class="py-2 text-white no-underline flex items-center space-x-2"
+            >
+              <i class="fas fa-phone"></i><span>01474 612085</span>
+            </a>
+            <a
+              href="apply.html"
+              class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
+            >
+              Apply
+            </a>
+          </div>
+
+          <!-- Hamburger (Visible on md and below) -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white text-2xl focus:outline-none"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden pt-4 pb-4 px-4 space-y-4 hidden">
+        <a href="index.html" class="block nav-link active text-white/80 py-2"
           >Home</a
         >
-        <a href="about.html" class="text-white/80 nav-link transition-colors"
-          >About</a
-        >
-        <a href="courses.html" class="text-white/80 nav-link transition-colors"
+        <a href="about.html" class="block nav-link text-white/80 py-2">About</a>
+        <a href="courses.html" class="block text-white/80 nav-link py-2"
           >Courses</a
         >
 
-        <a href="contact.html" class="text-white/80 nav-link transition-colors"
+        <a href="contact.html" class="block text-white/80nav-link py-2"
           >Contact</a
         >
         <a
           href="tel:01474612085"
-          class="py-2 text-white no-underline flex items-center space-x-2"
+          class="flex items-center space-x-2 text-white"
         >
           <i class="fas fa-phone"></i><span>01474 612085</span>
         </a>
+
         <a
           href="apply.html"
           class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
         >
           Apply
         </a>
+        <div class="flex space-x-4 pt-4">
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
       </div>
-
-      <!-- Hamburger (Visible on md and below) -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden text-white text-2xl focus:outline-none"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden pt-4 pb-4 px-4 space-y-4 hidden">
-    <a href="index.html" class="block nav-link active text-white/80 py-2"
-      >Home</a
-    >
-    <a href="about.html" class="block nav-link text-white/80 py-2">About</a>
-    <a href="courses.html" class="block text-white/80 nav-link py-2">Courses</a>
-
-    <a href="contact.html" class="block text-white/80nav-link py-2">Contact</a>
-    <a href="tel:01474612085" class="flex items-center space-x-2 text-white">
-      <i class="fas fa-phone"></i><span>01474 612085</span>
-    </a>
-
-    <a
-      href="apply.html"
-      class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
-    >
-      Apply
-    </a>
-    <div class="flex space-x-4 pt-4">
-      <a href="#" class="text-white nav-link"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a href="#" class="text-white nav-link"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="text-white nav-link"
-        ><i class="fab fa-instagram"></i
-      ></a>
-    </div>
-  </div>
-</header>
-
-
-
-
+    </header>
 
     <main>
       <!-- Hero -->
@@ -140,9 +156,7 @@
             class="w-full h-full object-cover"
           />
           <!-- Gradient Overlay -->
-          <div
-            class="absolute inset-0 bg-gradient-to-b from-black/80 to-indigo-900/80"
-          ></div>
+          <div class="absolute inset-0 bg-black/60"></div>
         </div>
 
         <!-- Foreground Content -->
@@ -155,8 +169,8 @@
             universities.
           </p>
           <a
-            href="#contact"
-            class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition"
+            href="courses.html"
+            class="bg-white hover:bg-black hover:text-white text-black px-6 py-3 rounded-md transition-colors"
           >
             Get Started
           </a>
@@ -164,188 +178,273 @@
       </section>
 
       <!-- British Council Certified -->
-                 <section class="min-h-screen py-16 text-black">
+
+      <section class="min-h-screen py-16 bg-black text-white">
         <div class="container mx-auto px-4">
           <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent mb-6 uppercase">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-6 uppercase">
               About Us
             </h2>
             <div
-              class="relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-indigo-400 to-indigo-600 rounded-full"
+              class="bg-gradient-to-r from-white/70 to-white relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
             ></div>
           </div>
 
-<div class="grid md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto px-4 md:px-8 py-12">
-  <!-- Image with Decorative Shadow -->
-  <div class="relative flex justify-center">
-    <!-- Decorative rotated background layer -->
-    <div class="absolute top-4 left-4 w-80 h-80 bg-indigo-600 transform rotate-2 rounded-xl z-0 shadow-2xl"></div>
+          <div
+            class="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto"
+          >
+            <!-- Image with Decorative Shadow -->
+            <div class="relative w-full max-w-full">
+              <!-- Decorative rotated background layer -->
+              <div
+                class="absolute top-4 left-4 w-full h-full bg-gradient-to-r from-white/70 to-white transform rotate-2 rounded-xl z-0 shadow-2xl"
+              ></div>
 
-    <!-- Image on top -->
-    <div class="relative z-10">
-      <img
-        src="https://res.cloudinary.com/temmarie/image/upload/v1747729121/18_yhmhvc.jpg"
-        alt="british council badge"
-        class="rounded-xl object-cover w-80 h-80 shadow-lg"
-      />
-    </div>
-  </div>
+              <!-- Image on top -->
+              <div class="relative z-10">
+                <img
+                  src="https://res.cloudinary.com/temmarie/image/upload/v1747837553/english-book-resting-table-working-space_fnpxik.webp"
+                  alt="british"
+                  class="rounded-xl object-cover w-full h-full shadow-lg"
+                />
+              </div>
+            </div>
 
-  <!-- Text Content -->
-  <div class="space-y-4 text-center md:text-left">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-indigo-500">
-      British Council Certified
-    </h2>
-    <p class="text-gray-500/80 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl">
-      TISAH is a certified British Council Education Agent. This means we meet the highest standards of ethics and knowledge in student advising, with up-to-date training and compliance on UK study policies.
-    </p>
-  </div>
-</div>
+            <!-- Text Content -->
+            <div class="space-y-6">
+              <p
+                class="font-extrabold text-xl leading-relaxed text-gradient-to-r from-white/70 to-white"
+              >
+                We Are British Council Approved!!
+              </p>
+              <br />
+              <p
+                class="text-white/70 text-base sm:text-lg md:text-xl leading-relaxed"
+              >
+  At TISAH, we recognize the complexities and opportunities that come with pursuing international education. 
+Our team of seasoned education consultants has a proven track record of helping numerous students from around the world achieve their UK university dreams. 
+We're dedicated to delivering personalized guidance and support, empowering every student to reach their full potential.
+<br /> 
+  As a certified British Council Education Agent, 
+we meet the highest standards of ethics and knowledge in student
+                advising, with up-to-date training and compliance on UK study policies.
 
+              </p>
+
+               <p class="text-lg italic text-white ">
+          "We don’t just help you apply—we prepare you for the journey ahead."
+        </p>
+              <div>
+                <a
+                  href="apply.html"
+                  class="inline-block bg-gradient-to-r from-white/70 to-white hover:bg-white/70 text-black px-8 py-3 rounded-md font-semibold transition-colors"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-
-
-
       <!-- Mission and Values Section -->
-<!-- Mission and Values Section -->
-<section class="relative py-20">
-  <!-- Background Image -->
-  <div class="absolute inset-0 z-0">
-    <img
-      src="https://res.cloudinary.com/temmarie/image/upload/v1747670803/young-students-learning-together-group-study_h6im0q.webp"
-      alt="Students Group Study"
-      class="w-full h-full object-cover"
-    />
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-indigo-900/80"></div>
-  </div>
+      <!-- Mission and Values Section -->
+      <section class="py-20 relative">
+                <img
+          src="https://res.cloudinary.com/temmarie/image/upload/v1747839326/group-ethnic-multicultural-students-sitting-table-library_e5a9jf.webp"
+          alt="impact"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 relative">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent mb-4 uppercase"
+            >
+              Our Mission & Visions
+            </h2>
+               <div
+              class="bg-gradient-to-r from-white/70 to-white relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
+            ></div>
 
-  <!-- Content Layer -->
-  <div class="relative z-10 max-w-7xl mx-auto px-4">
-    <!-- Header -->
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
-        Our Mission & Values
-      </h2>
-      <p class="text-lg text-white/70 max-w-2xl mx-auto">
-        We're guided by core principles that ensure we always put students first.
-      </p>
-    </div>
+            <p class="text-lg text-white/70 max-w-2xl mx-auto">
+              We're guided by core principles that ensure we always put students
+              first.
+            </p>
+         
+          </div>
 
-    <!-- Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-black border border-white hover:border-indigo-500/50 transition-all duration-300 rounded-xl p-6">
-        <div class="h-12 w-12 rounded-full bg-indigo-900/50 flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-400" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16v-2" />
-            <path d="M16.5 9.4 7.55 4.24"></path>
-            <polyline points="3.29 7 12 12 20.71 7"></polyline>
-            <line x1="12" y1="22" x2="12" y2="12"></line>
-          </svg>
+          <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Card 1 -->
+              <div
+                class="border border-white p-6 rounded-lg hover:border-2 transition-all"
+              >
+                <div
+                  class="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-black"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16v-2"
+                    />
+                    <path d="M16.5 9.4 7.55 4.24"></path>
+                    <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                    <line x1="12" y1="22" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Student-Centered
+                </h3>
+                <p class="text-white/70">
+                  We prioritize each student's unique goals, challenges, and
+                  potential, crafting personalized pathways to academic success.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class=" border border-white hover:border-2 transition-all duration-300 rounded-xl p-6"
+              >
+                <div
+                  class="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-black"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Integrity</h3>
+                <p class="text-white/70">
+                  We operate with complete transparency, providing honest
+                  guidance even when it means suggesting alternatives to a
+                  student's initial plans.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class=" border border-white hover:border-2 transition-all duration-300 rounded-xl p-6"
+              >
+                <div
+                  class="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-black"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m16.24 7.76-4.24 4.24-4.24-4.24"></path>
+                    <path d="m16.24 16.24-4.24-4.24-4.24 4.24"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Excellence</h3>
+                <p class="text-white/70">
+                  We strive for the highest standards in our services,
+                  continuously updating our knowledge and improving our
+                  processes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Cards -->
         </div>
-        <h3 class="text-xl font-bold text-white mb-2">Student-Centered</h3>
-        <p class="text-white/70">
-          We prioritize each student's unique goals, challenges, and potential, crafting personalized pathways to academic success.
-        </p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-black border border-white hover:border-indigo-500/50 transition-all duration-300 rounded-xl p-6">
-        <div class="h-12 w-12 rounded-full bg-indigo-900/50 flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-400" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Integrity</h3>
-        <p class="text-white/70">
-          We operate with complete transparency, providing honest guidance even when it means suggesting alternatives to a student's initial plans.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-black border border-white hover:border-indigo-500/50 transition-all duration-300 rounded-xl p-6">
-        <div class="h-12 w-12 rounded-full bg-indigo-900/50 flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-400" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="m16.24 7.76-4.24 4.24-4.24-4.24"></path>
-            <path d="m16.24 16.24-4.24-4.24-4.24 4.24"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Excellence</h3>
-        <p class="text-white/70">
-          We strive for the highest standards in our services, continuously updating our knowledge and improving our processes.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <!-- Stats Section -->
-<section class="py-20 relative bg-gradient-to-b from-black to-indigo-950">
+      <!-- Stats Section -->
+      <section class="py-20 relative bg-black">
 
-
-  <div class="container mx-auto px-4">
-    <!-- Section Header -->
-    <div class="text-center mb-16 fade-up">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
-        Our Impact at a Glance
-      </h2>
-      <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto">
-        Helping students achieve their UK university dreams—one success story at a time.
-      </p>
-    </div>
-
-    <!-- Stats Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <!-- Students Placed -->
-      <div class="text-center fade-up" style="transition-delay: 0ms;">
-        <div class="text-indigo-400 text-4xl mb-3">
-          <i class="fas fa-user-graduate"></i>
+        <div class="container mx-auto px-4 relative">
+          <!-- Section Header -->
+          <div class="mb-16 fade-up text-center">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold mb-6 uppercase text-white"
+            >
+              Our Impact At A Glance
+            </h2>
+            <div
+              class="bg-gradient-to-r from-white/70 to-white relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
+            ></div>
+            <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto">
+              Helping students achieve their UK university dreams—one success
+              story at a time.
+            </p>
+          </div>
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Students Placed -->
+            <div class="text-center fade-up" style="transition-delay: 0ms">
+              <div class="text-white/70 text-4xl mb-3">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <p class="text-5xl font-bold text-white mb-2">
+                15k<span class="text-white">+</span>
+              </p>
+              <p class="text-white/70">Students Placed</p>
+            </div>
+            <!-- Partner Universities -->
+            <div class="text-center fade-up" style="transition-delay: 100ms">
+              <div class="text-white/70 text-4xl mb-3">
+                <i class="fas fa-university"></i>
+              </div>
+              <p class="text-5xl font-bold text-white mb-2">
+                50<span class="text-white">+</span>
+              </p>
+              <p class="text-white/70">Partner Universities</p>
+            </div>
+            <!-- Success Rate -->
+            <div class="text-center fade-up" style="transition-delay: 200ms">
+              <div class="text-white/70 text-4xl mb-3">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <p class="text-5xl font-bold text-white mb-2">
+                96<span class="text-white">%</span>
+              </p>
+              <p class="text-white/70">Success Rate</p>
+            </div>
+            <!-- Years Experience -->
+            <div class="text-center fade-up" style="transition-delay: 300ms">
+              <div class="text-white/70 text-4xl mb-3">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <p class="text-5xl font-bold text-white mb-2">
+                13<span class="text-white">+</span>
+              </p>
+              <p class="text-white/70">Years Experience</p>
+            </div>
+          </div>
         </div>
-        <p class="text-5xl font-bold text-white mb-2">
-          15k<span class="text-indigo-400">+</span>
-        </p>
-        <p class="text-white/70">Students Placed</p>
-      </div>
+      </section>
 
-      <!-- Partner Universities -->
-      <div class="text-center fade-up" style="transition-delay: 100ms;">
-        <div class="text-indigo-400 text-4xl mb-3">
-          <i class="fas fa-university"></i>
-        </div>
-        <p class="text-5xl font-bold text-white mb-2">
-          50<span class="text-indigo-400">+</span>
-        </p>
-        <p class="text-white/70">Partner Universities</p>
-      </div>
-
-      <!-- Success Rate -->
-      <div class="text-center fade-up" style="transition-delay: 200ms;">
-        <div class="text-indigo-400 text-4xl mb-3">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <p class="text-5xl font-bold text-white mb-2">
-          96<span class="text-indigo-400">%</span>
-        </p>
-        <p class="text-white/70">Success Rate</p>
-      </div>
-
-      <!-- Years Experience -->
-      <div class="text-center fade-up" style="transition-delay: 300ms;">
-        <div class="text-indigo-400 text-4xl mb-3">
-          <i class="fas fa-calendar-alt"></i>
-        </div>
-        <p class="text-5xl font-bold text-white mb-2">
-          13<span class="text-indigo-400">+</span>
-        </p>
-        <p class="text-white/70">Years Experience</p>
-      </div>
-    </div>
-  </div>
-</section>
 
       <!-- Universities Section -->
       <!-- Universities Section -->
@@ -353,20 +452,23 @@
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
           <img
-            src="https://res.cloudinary.com/temmarie/image/upload/v1747670803/young-students-learning-together-group-study_h6im0q.webp"
+            src="https://res.cloudinary.com/temmarie/image/upload/v1747839327/high-angle-people-reading-together_nlvw5k.webp"
             alt="Students Group Study"
             class="w-full h-full object-cover"
           />
           <!-- Gradient Overlay -->
           <div
-            class="absolute inset-0 bg-gradient-to-b from-black/80 to-indigo-900/80"
+            class="absolute inset-0 bg-black/60"
           ></div>
         </div>
 
         <!-- Content -->
         <div class="relative z-10 container mx-auto px-4">
           <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-bold mb-4">Our Partner Universities</h2>
+            <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent mb-4 uppercase">Our Partner Universities</h2>
+                  <div
+        class="bg-gradient-to-r from-white/70 to-white relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
+      ></div>
             <p class="text-white/70">
               We work with prestigious universities across the UK to provide you
               with the best options
@@ -409,8 +511,8 @@
 
           <div class="text-center mt-10">
             <a
-              href="universities.html"
-              class="inline-block bg-transparent border border-indigo-500/50 hover:bg-indigo-600/10 text-white px-6 py-3 rounded-md transition-colors"
+              href="courses.html"
+              class="inline-block bg-transparent border border-white hover:bg-white/50 text-white px-6 py-3 rounded-md transition-colors"
             >
               View All Partner Universities
             </a>
@@ -419,67 +521,208 @@
       </section>
 
 
+            <!-- Services Section -->
+      <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent mb-4 uppercase"
+            >
+              Our Services
+            </h2>
 
+            <div
+              class="bg-gradient-to-r from-white/70 to-white relative mb-10 bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 rounded-full"
+            ></div>
+          </div>
 
- 
-                 <!-- Why Choose Us -->
-      <!-- <section
-        class="bg-gray-100 dark:bg-gray-800 px-4 py-20 animate-on-scroll"
-      >
-        <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl font-bold text-indigo-600 mb-10">
-            Why Choose Us?
-          </h2>
-          <ul class="space-y-6 text-lg list-disc list-inside">
-            <li>
-              <strong>Tailored Support:</strong> One-on-one assistance from your
-              first inquiry to arrival in the UK.
-            </li>
-            <li>
-              <strong>100% Transparency:</strong> No hidden charges or
-              misleading promises—just honest guidance.
-            </li>
-            <li>
-              <strong>University Network:</strong> We collaborate directly with
-              top UK institutions.
-            </li>
-            <li>
-              <strong>Certified Expertise:</strong> We're officially recognized
-              by education bodies and institutions.
-            </li>
-          </ul>
+          <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="border border-white p-6 rounded-lg hover:border-2 transition-all"
+              >
+                <div class="inline-block bg-white p-3 rounded-lg mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="black"
+                    class="w-6 h-6 black"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Course & University Selection
+                </h3>
+                <p class="text-white/70 mb-4">
+                  Personalized guidance to help you find the perfect course and
+                  university based on your academic qualifications and career
+                  goals.
+                </p>
+                <a
+                  href="courses.html"
+                  class="text-white hover:text-white/70 inline-flex items-center"
+                >
+                  Learn more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div
+                class="border border-white p-6 rounded-lg hover:border-2 transition-all"
+              >
+                <div class="inline-block bg-white p-3 rounded-lg mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-black"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V19.5a2.25 2.25 0 0 0 2.25 2.25h3.001c1.012 0 1.867-.668 2.15-1.586m-5.8 0c.376-.023.75-.05 1.124-.08"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">
+                  Application Assistance
+                </h3>
+                <p class="text-white/70 mb-4">
+                  Complete support throughout the application process, including
+                  document preparation, personal statement reviews, and
+                  application submission.
+                </p>
+                <a
+                  href="apply.html"
+                  class="text-white hover:text-white/70 inline-flex items-center"
+                >
+                  Learn more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div
+                class="border border-white p-6 rounded-lg hover:border-2 transition-all"
+              >
+                <div class="inline-block bg-white p-3 rounded-lg mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-black"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Visa Guidance</h3>
+                <p class="text-white/70 mb-4">
+                  Expert advice and support for your student visa application,
+                  ensuring you meet all requirements for studying in the UK.
+                </p>
+                <a
+                  href="contact.html"
+                  class="text-white hover:text-white/70 inline-flex items-center"
+                >
+                  Learn more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section> -->
+      </section>
 
 
-      <!-- About Us -->
-      <!-- <section class="px-4 py-20 max-w-5xl mx-auto animate-on-scroll">
-        <h2 class="text-3xl font-bold mb-4 text-indigo-600">About Us</h2>
-        <p class="text-lg mb-6">
-          At <strong>UK Uni Access</strong>, we specialize in providing trusted
-          advice and services for international students aiming to study in the
-          UK. Our dedicated team ensures that every student receives clear,
-          personalized guidance tailored to their academic goals.
-        </p>
-        <p class="text-lg italic text-gray-700 dark:text-gray-300">
-          "We don’t just help you apply—we prepare you for the journey ahead."
-        </p>
-      </section> -->
 
+      <!-- CTA Section -->
+      <section class="relative py-30 overflow-hidden">
+        <!-- Background Image and Gradient -->
+        <div class="absolute inset-0 w-full h-full z-0">
+          <img
+            src="https://images.unsplash.com/photo-1573496529574-be85d6a60704"
+            alt="University Background"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-b bg-black/60"></div>
+        </div>
 
-      <!-- CTA -->
-      <!-- <section
-        class="px-4 py-20 text-center bg-indigo-700 text-white animate-on-scroll"
-      >
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Start Your UK University Journey Today
-        </h2>
-        <a
-          href="#contact"
-          class="inline-block mt-6 bg-white text-indigo-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition"
-          >Get Started</a
+        <!-- Content -->
+        <div
+          class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left"
         >
-      </section> -->
+          <div class="max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Start Your UK Education Journey?
+            </h2>
+            <p class="text-xl text-white/80 mb-8">
+              Let us guide you through the process and help you achieve your
+              academic goals in the United Kingdom.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+              <a
+                href="apply.html"
+                class="bg-white text-black hover:bg-black hover:text-white px-8 py-3 rounded-md font-semibold transition-colors"
+              >
+                Apply Now
+              </a>
+              <a
+                href="#contact"
+                class="bg-transparent border border-white hover:bg-white/10 text-white px-8 py-3 rounded-md font-semibold transition-colors"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -487,17 +730,42 @@
       <div class="container mx-auto px-6 sm:px-8 lg:px-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="space-y-4">
-            <h3
-              class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent"
-            >
-              TISAH UK Pathways
-            </h3>
+            <!-- Logo + Brand -->
+
+            <a href="index.html" class="flex items-center space-x-4">
+              <div class="p-2">
+                <!-- Spade SVG icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="white"
+                  transform="rotate(180)"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
+                  />
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+                >
+                  TISAH
+                </span>
+                <small class="text-white/70 text-sm">
+                  The International Student Admissions Hub
+                </small>
+              </div>
+            </a>
+
             <p class="text-white/70">
               Your gateway to prestigious UK universities. We help international
               students find their perfect academic match.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="text-white/70 hover:text-indigo-400">
+              <a href="#" class="text-white/70 hover:font-extrabold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -515,7 +783,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="#" class="text-white/70 hover:text-indigo-400">
+              <a href="#" class="text-white/70 hover:font-extrabold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -533,7 +801,7 @@
                   ></path>
                 </svg>
               </a>
-              <a href="#" class="text-white/70 hover:text-indigo-400">
+              <a href="#" class="text-white/70 hover:font-extrabold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -553,7 +821,7 @@
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                 </svg>
               </a>
-              <a href="#" class="text-white/70 hover:text-indigo-400">
+              <a href="#" class="text-white/70 hover:font-extrabold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -582,35 +850,35 @@
               <li>
                 <a
                   href="index.html"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="about.html"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
                   href="courses.html"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Courses</a
                 >
               </li>
               <li>
                 <a
                   href="universities.html"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Universities</a
                 >
               </li>
               <li>
                 <a
                   href="apply.html"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Apply Now</a
                 >
               </li>
@@ -623,35 +891,35 @@
               <li>
                 <a
                   href="#"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >University Selection</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Application Assistance</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Visa Guidance</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Pre-departure Briefing</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-white/70 hover:text-indigo-400 transition-colors"
+                  class="text-white/70 hover:font-extrabold transition-colors"
                   >Accommodation Support</a
                 >
               </li>
@@ -668,7 +936,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5 mr-2 text-indigo-400"
+                  class="w-5 h-5 mr-2 text-white/70"
                 >
                   <path
                     stroke-linecap="round"
@@ -692,7 +960,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5 mr-2 text-indigo-400"
+                  class="w-5 h-5 mr-2 text-white/70"
                 >
                   <path
                     stroke-linecap="round"
@@ -709,7 +977,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 h-5 mr-2 text-indigo-400"
+                  class="w-5 h-5 mr-2 text-white/70"
                 >
                   <path
                     stroke-linecap="round"
@@ -717,7 +985,7 @@
                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                   />
                 </svg>
-                <span class="text-white/70">info@indigoukpathways.com</span>
+                <span class="text-white/70">info@tisah.com</span>
               </li>
             </ul>
           </div>
@@ -727,17 +995,17 @@
           class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center"
         >
           <p class="text-white/50 text-sm">
-            © <span id="current-year"></span> Indigo UK Pathways. All rights
-            reserved.
+            © <span id="current-year"></span> The International Students
+            Admissions Hub. All rights reserved.
           </p>
           <div class="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" class="text-white/50 text-sm hover:text-indigo-400"
+            <a href="#" class="text-white/50 text-sm hover:font-extrabold"
               >Privacy Policy</a
             >
-            <a href="#" class="text-white/50 text-sm hover:text-indigo-400"
+            <a href="#" class="text-white/50 text-sm hover:font-extrabold"
               >Terms of Service</a
             >
-            <a href="#" class="text-white/50 text-sm hover:text-indigo-400"
+            <a href="#" class="text-white/50 text-sm hover:font-extrabold"
               >Cookie Policy</a
             >
           </div>
