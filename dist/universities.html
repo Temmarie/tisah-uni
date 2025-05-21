@@ -198,64 +198,74 @@
   </section>
 
   <!-- Filters -->
-      <!-- Filters -->
-      <section class="mb-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-white">
-          <div>
-            <label
-              for="location"
-              class="block text-sm font-medium text-white"
-              >Location</label
-            >
-            <select
-              id="location"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-            >
-              <option value="">All</option>
-              <option value="England">England</option>
-              <option value="Scotland">Scotland</option>
-              <option value="Wales">Wales</option>
-              <option value="Northern Ireland">Northern Ireland</option>
-            </select>
-          </div>
-          <div>
-            <label for="tuition" class="block text-sm font-medium text-gray-700"
-              >Max Tuition Fees (£)</label
-            >
-            <input
-              type="number"
-              id="tuition"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-              placeholder="e.g., 15000"
-            />
-          </div>
-          <div>
-            <label for="ielts" class="block text-sm font-medium text-gray-700"
-              >Minimum IELTS</label
-            >
-            <select
-              id="ielts"
-              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"
-            >
-              <option value="">Any</option>
-              <option value="4.0">4.0</option>
-              <option value="5.0">5.0</option>
-              <option value="6.0">6.0</option>
-              <option value="6.5">6.5</option>
-              <option value="7.0">7.0</option>
-            </select>
-          </div>
-        </div>
+<!-- Filters -->
+<section class="mb-10">
+  <div class="bg-black p-6 shadow-xl border border-white/70">
+    <h3 class="text-xl font-semibold text-white mb-4">Filter Universities</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Location Filter -->
+      <div>
+        <label for="location" class="block text-sm font-medium text-gray-300 mb-1">
+          Location
+        </label>
+        <select
+          id="location"
+          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+        >
+          <option value="">All</option>
+          <option value="England">England</option>
+          <option value="Scotland">Scotland</option>
+          <option value="Wales">Wales</option>
+          <option value="Northern Ireland">Northern Ireland</option>
+        </select>
+      </div>
 
-        <div class="mt-4">
-          <button
-            id="filterBtn"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow"
-          >
-            Apply Filters
-          </button>
-        </div>
-      </section>
+      <!-- Tuition Filter -->
+      <div>
+        <label for="tuition" class="block text-sm font-medium text-gray-300 mb-1">
+          Max Tuition Fees (£)
+        </label>
+        <input
+          type="number"
+          id="tuition"
+          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+          placeholder="e.g. 15000"
+        />
+      </div>
+
+      <!-- IELTS Filter -->
+      <div>
+        <label for="ielts" class="block text-sm font-medium text-gray-300 mb-1">
+          Minimum IELTS
+        </label>
+        <select
+          id="ielts"
+          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+        >
+          <option value="">Any</option>
+          <option value="4.0">4.0</option>
+          <option value="5.0">5.0</option>
+          <option value="6.0">6.0</option>
+          <option value="6.5">6.5</option>
+          <option value="7.0">7.0</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Apply Button -->
+    <div class="mt-6 text-right">
+      <button
+        id="filterBtn"
+        class="inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white hover:border-2   font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-200"
+      >
+        <i class="fas fa-filter"></i>
+        Apply Filters
+      </button>
+    </div>
+  </div>
+</section>
 
 
   <!-- University List -->
