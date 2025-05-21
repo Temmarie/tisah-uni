@@ -11,14 +11,13 @@ body {
   padding: 0;
 }
 
-.nav-link.active .nav-link,
+.nav-link.active,
 .nav-link:hover {
-  color: #6366f1 !important;
-}
+  color: whitesmoke !important;
+  font-weight: 900;
+  text-decoration: underline;
 
-.nav-link.active {
-  color: #6366f1 !important;
-  font-weight: 900; /* Set your desired mint color */
+  /* Set your desired mint color */
 }
 
 .nav-link {

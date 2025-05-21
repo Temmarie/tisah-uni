@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
@@ -15,143 +15,130 @@
     />
   </head>
 
-
-
   <body>
     <header
-  id="navbar-scroll"
-  class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
->
-  <div
-    class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-10"
-  >
-    <!-- Logo + Brand -->
-    <a href="index.html" class="flex items-center space-x-2">
-      <div class="p-2">
-        <!-- Your SVG -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          fill="#4F39F6"
-          transform="rotate(180)"
-          viewBox="0 0 32 32"
-        >
-          <path
-            d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
-          />
-        </svg>
-      </div>
-      <span
-        class="text-4xl font-bold bg-gradient-to-r tracking-wider uppercase from-indigo-400 to-indigo-600 bg-clip-text text-transparent"
+      id="navbar-scroll"
+      class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-10"
       >
-        Tisah
-      </span>
-    </a>
+        <!-- Logo + Brand -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="p-2">
+            <!-- Your SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="white"
+              transform="rotate(180)"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
+              />
+            </svg>
+          </div>
+          <span
+            class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+          >
+            Tisah
+          </span>
+        </a>
 
-    <!-- Nav + Hamburger -->
-    <nav class="flex items-center space-x-6">
-      <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a
-          href="index.html"
-          class="text-white/80 nav-link active" aria-current="page" hover:text-indigo-400 transition-colors"
+        <!-- Nav + Hamburger -->
+        <nav class="flex items-center space-x-6">
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center space-x-6">
+            <a
+              href="index.html"
+              class="text-white/80 nav-link transition-colors"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-white/80 nav-link transition-colors"
+              >About</a
+            >
+            <a
+              href="courses.html"
+              class="text-white/80 nav-link transition-colors"
+              >Courses</a
+            >
+
+            <a
+              href="contact.html"
+              class="text-white/80 nav-link transition-colors"
+              >Contact</a
+            >
+            <a
+              href="tel:01474612085"
+              class="py-2 text-white no-underline flex items-center space-x-2"
+            >
+              <i class="fas fa-phone"></i><span>01474 612085</span>
+            </a>
+            <a
+              href="apply.html"
+              class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
+            >
+              Apply
+            </a>
+          </div>
+
+          <!-- Hamburger (Visible on md and below) -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white text-2xl focus:outline-none"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden pt-4 pb-4 px-4 space-y-4 hidden">
+        <a href="index.html" class="block nav-link active text-white/80 py-2"
           >Home</a
         >
-        <a
-          href="about.html"
-          class="text-white/80 nav-link hover:text-indigo-400 transition-colors"
-          >About</a
-        >
-        <a
-          href="courses.html"
-          class="text-white/80 nav-link hover:text-indigo-400 transition-colors"
+        <a href="about.html" class="block nav-link text-white/80 py-2">About</a>
+        <a href="courses.html" class="block text-white/80 nav-link py-2"
           >Courses</a
         >
 
-        <a
-          href="contact.html"
-          class="text-white/80 nav-link hover:text-indigo-400 transition-colors"
+        <a href="contact.html" class="block text-white/80nav-link py-2"
           >Contact</a
         >
         <a
           href="tel:01474612085"
-          class="py-2 text-white no-underline hover:text-indigo-500 flex items-center space-x-2"
+          class="flex items-center space-x-2 text-white"
         >
           <i class="fas fa-phone"></i><span>01474 612085</span>
         </a>
+
         <a
           href="apply.html"
-          class="nav-link bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
+          class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
         >
           Apply
         </a>
+        <div class="flex space-x-4 pt-4">
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="text-white nav-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
       </div>
+    </header>
 
-      <!-- Hamburger (Visible on md and below) -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden text-white text-2xl focus:outline-none"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden pt-4 pb-4 px-4 space-y-4 hidden">
-    <a href="index.html" class="block nav-link active text-white/80 hover:text-indigo-400 py-2"
-      >Home</a
-    >
-    <a href="about.html" class="block nav-link text-white/80 hover:text-indigo-400 py-2"
-      >About</a
-    >
-    <a
-      href="courses.html"
-      class="block text-white/80  nav-link hover:text-indigo-400 py-2"
-      >Courses</a
-    >
-
-    <a
-      href="contact.html"
-      class="block text-white/80nav-link  hover:text-indigo-400 py-2"
-      >Contact</a
-    >
-    <a
-      href="tel:01474612085"
-      class="flex items-center space-x-2 text-white hover:text-indigo-400"
-    >
-      <i class="fas fa-phone"></i><span>01474 612085</span>
-    </a>
-
-    <a
-      href="apply.html"
-      class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-colors"
-    >
-      Apply
-    </a>
-    <div class="flex space-x-4 pt-4">
-      <a href="#" class="text-white hover:text-indigo-500"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a href="#" class="text-white hover:text-indigo-500"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a href="#" class="text-white hover:text-indigo-500"
-        ><i class="fab fa-instagram"></i
-      ></a>
-    </div>
-  </div>
-</header>
-
-
-
-<main>
-
-</main>
-
-
+    <main></main>
   </body>
 </html>
