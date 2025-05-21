@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Birkbeck, University of London",
+    "location": "England",
+    "tuition": 12000,
+    "ielts": 6.0,
+    "satisfaction": 82,
+    "ranking": 40,
+    "image": "http://www.bbk.ac.uk/bbklogo.jpg"
+  },
+  {
+    "name": "University of Brighton",
+    "location": "England",
+    "tuition": 13500,
+    "ielts": 6.0,
+    "satisfaction": 78,
+    "ranking": 70,
+    "image": "https://www.brighton.ac.uk/uob-api/data/uob-logo-bw-320x75.png"
+  },
+  {
+    "name": "The University of Bristol",
+    "location": "England",
+    "tuition": 18000,
+    "ielts": 6.5,
+    "satisfaction": 85,
+    "ranking": 15,
+    "image": "http://www.bristol.ac.uk/media-library/protected/images/uob-logo-full-colour-largest-2.png"
+  },
+  {
+    "name": "University of Cambridge",
+    "location": "England",
+    "tuition": 19000,
+    "ielts": 7.0,
+    "satisfaction": 90,
+    "ranking": 1,
+    "image": "https://www.cam.ac.uk/.well-known/logo.png"
+  },
+  {
+    "name": "Cranfield University",
+    "location": "England",
+    "tuition": 17000,
+    "ielts": 6.5,
+    "satisfaction": 84,
+    "ranking": 35,
+    "image": "http://www.cranfield.ac.uk/style/images/logo.png"
+  },
+  {
+    "name": "De Montfort University",
+    "location": "England",
+    "tuition": 13000,
+    "ielts": 6.0,
+    "satisfaction": 80,
+    "ranking": 65,
+    "image": "http://hal.dmu.ac.uk/subsites/opd/dmu-logo.png"
+  },
+  {
+    "name": "University of Exeter",
+    "location": "England",
+    "tuition": 17000,
+    "ielts": 6.5,
+    "satisfaction": 86,
+    "ranking": 20,
+    "image": "http://www.exeter.ac.uk/designstudio/visualidentity/downloads/logos/colour_logo.jpg"
+  },
+  {
+    "name": "Imperial College London",
+    "location": "England",
+    "tuition": 19000,
+    "ielts": 7.0,
+    "satisfaction": 88,
+    "ranking": 3,
+    "image": "https://www.imperial.ac.uk/opd/Imperial_logo.jpg"
+  },
+  {
+    "name": "University of Leicester",
+    "location": "England",
+    "tuition": 14000,
+    "ielts": 6.0,
+    "satisfaction": 79,
+    "ranking": 45,
+    "image": "https://le.ac.uk/~/media/uol/university-of-leicester-logo/uol-logo.png"
+  },
+  {
+    "name": "Loughborough University",
+    "location": "England",
+    "tuition": 16000,
+    "ielts": 6.5,
+    "satisfaction": 87,
+    "ranking": 10,
+    "image": "https://www.lboro.ac.uk/web-assets/prod/fountain/images/opendata/lu-rgb.png"
+  },
+  {
+    "name": "University of Oxford",
+    "location": "England",
+    "tuition": 19000,
+    "ielts": 7.0,
+    "satisfaction": 91,
+    "ranking": 2,
+    "image": "https://www.ox.ac.uk/sites/default/themes/custom/oxweb/images/oxweb-logo.gif"
+  },
+  {
+    "name": "The University of Sheffield",
+    "location": "England",
+    "tuition": 16000,
+    "ielts": 6.5,
+    "satisfaction": 84,
+    "ranking": 25,
+    "image": "https://equipment.shef.ac.uk/uos-logo.svg"
+  },
+  {
+    "name": "University of Southampton",
+    "location": "England",
+    "tuition": 16500,
+    "ielts": 6.5,
+    "satisfaction": 83,
+    "ranking": 22,
+    "image": "https://data.southampton.ac.uk/graphics/southampton_opd_logo.png"
+  },
+  {
+    "name": "University College London (UCL)",
+    "location": "England",
+    "tuition": 18500,
+    "ielts": 6.5,
+    "satisfaction": 89,
+    "ranking": 4,
+    "image": "https://cdn.ucl.ac.uk/indigo/images/twitter-card-ucl-logo.png"
+  },
+  {
+    "name": "The University of York",
+    "location": "England",
+    "tuition": 15000,
+    "ielts": 6.0,
+    "satisfaction": 82,
+    "ranking": 30,
+    "image": "https://www.york.ac.uk/.well-known/Uni-of-York-black.jpg"
+  }
+]
