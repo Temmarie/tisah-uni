@@ -16,7 +16,6 @@
   </head>
   <body>
     <!-- Header/Navbar -->
-
     <header
       id="navbar-scroll"
       class="fixed top-0 left-0 w-full z-50 bg-black text-white py-4 transition-all duration-500 ease-in-out translate-y-0 opacity-100"
@@ -87,13 +86,14 @@
               >Contact</a
             >
             <a
-              href="tel:01474612085"
+              href="https://wa.me/441474612085"
+              target="_blank"
               class="py-2 text-white no-underline flex items-center space-x-2"
             >
-              <i class="fas fa-phone"></i><span>01474 612085</span>
+              <i class="fas fa-phone"></i><span>+44 1474 612085</span>
             </a>
             <a
-              href="apply.html"
+              href="contact.html"
               class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
             >
               Apply
@@ -136,7 +136,7 @@
         </a>
 
         <a
-          href="apply.html"
+          href="contact.html"
           class="bg-gradient-to-r from-white/70 to-white text-black hover:bg-white px-4 py-2 rounded-md transition-colors"
         >
           Apply
@@ -156,29 +156,32 @@
     </header>
 
     <main>
-      <!-- Contact Hero -->
+      <!-- Hero Section -->
+
       <section class="relative py-32 text-white overflow-hidden">
+        <!-- Background Image -->
         <div class="absolute inset-0 z-0">
           <img
-            src="https://res.cloudinary.com/temmarie/image/upload/v1747670803/young-students-learning-together-group-study_h6im0q.webp"
+            src="https://res.cloudinary.com/temmarie/image/upload/v1747692300/friends-learning-study-group_m7alfr.webp"
             alt="Students Group Study"
             class="w-full h-full object-cover"
           />
-          <div
-            class="absolute inset-0 bg-gradient-to-b from-black/80 to-indigo-900/80"
-          ></div>
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-black/60"></div>
         </div>
+
+        <!-- Foreground Content -->
         <div class="relative z-10 container mx-auto px-4 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
-            Get in Touch with Us
+            Get In Touch With Us
           </h1>
           <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
             Whether you're ready to apply, need help with a course, or want to
             connect—reach out anytime.
           </p>
           <a
-            href="#contact-form"
-            class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition"
+            href="courses.html"
+            class="bg-white hover:bg-black hover:text-white text-black px-6 py-3 rounded-md transition-colors"
           >
             Contact Us
           </a>
@@ -187,7 +190,7 @@
 
       <!-- Contact Section -->
       <section
-        class="bg-gradient-to-b from-indigo-950 via-slate-950 to-black text-white py-20 px-4 sm:px-8 lg:px-16"
+        class="bg-black text-white py-20 px-4 sm:px-8 lg:px-16"
         id="contact-form"
       >
         <div
@@ -198,49 +201,74 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-6">
               Our Contact Details
             </h2>
+
             <p class="text-slate-400 mb-8 text-lg">
-              Reach out to us for course information, application help, or
-              general inquiries. We’re here to guide your academic journey.
+              Reach out for course information, application help, or general
+              inquiries. We’re here to guide your academic journey.
             </p>
             <ul class="space-y-4 text-slate-300 text-md">
               <li>
-                <strong class="text-indigo-400">Email:</strong>
-                <a href="mailto:info@tmace.org" class="hover:underline"
-                  >info@tmace.org</a
+                <strong class="text-white/70">Email:</strong>
+                <a href="mailto:info@tisah.com" class="hover:underline"
+                  >info@tisah.com</a
                 >
               </li>
               <li>
-                <strong class="text-indigo-400">Phone:</strong>
+                <strong class="text-white/70">Phone:</strong>
                 <a href="tel:01474612085" class="hover:underline"
                   >01474 612085</a
                 >
               </li>
               <li>
-                <strong class="text-indigo-400">Address:</strong><br />
-                TM ACE Limited<br />
-                Unit A, 82 James Carter Road<br />
-                Mildenhall, IP28 7DE
+                <strong class="text-white/70">Address:</strong><br />
+                TISAH,<br />Unit A, 82 James Carter Road<br />Mildenhall, IP28
+                7DE
               </li>
             </ul>
 
+            <!-- WhatsApp Button -->
+            <div class="mt-6">
+              <a
+                href="https://wa.me/441474612085"
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.52 3.48A11.924 11.924 0 0012 0C5.373 0 0 5.373 0 12c0 2.113.551 4.15 1.597 5.942L0 24l6.293-1.593A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12 0-3.192-1.243-6.193-3.48-8.52zM12 22c-1.951 0-3.82-.5-5.475-1.448l-.39-.223-3.742.947.99-3.641-.251-.383A9.935 9.935 0 012 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.035-7.568c-.293-.147-1.731-.852-2-1.006-.269-.154-.465-.22-.66.073s-.758 1.006-.93 1.214c-.171.207-.34.233-.633.08-.293-.154-1.236-.455-2.355-1.45-.87-.773-1.457-1.726-1.628-2.02-.17-.293-.018-.45.13-.597.134-.133.294-.346.44-.519.147-.172.195-.295.293-.49.098-.195.049-.365-.024-.518-.073-.154-.66-1.595-.904-2.183-.237-.57-.48-.493-.66-.502l-.565-.01c-.195 0-.51.073-.778.342s-1.021 1-1.021 2.437 1.046 2.83 1.191 3.026c.146.195 2.06 3.144 5.002 4.41.7.302 1.244.482 1.668.617.7.223 1.336.192 1.84.117.56-.084 1.731-.707 1.978-1.39.244-.684.244-1.27.171-1.39-.072-.117-.268-.195-.56-.342z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+
             <div
-              class="mt-10 text-indigo-300 text-sm border-t border-white/10 pt-6"
+              class="mt-10 text-red-500/70 font-extrabold text-sm border-t border-white/10 pt-6"
             >
               <p>
-                <strong>Note:</strong> We do not offer visa application services
-                directly, but we can connect you with trusted specialists who
-                do.
+                <strong>Note:</strong> We do not offer visa services directly,
+                but we can connect you with trusted partners.
               </p>
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Application Enquiry Form -->
           <div
             class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-xl shadow-xl text-white"
           >
-            <h3 class="text-2xl font-bold mb-6 text-center">Contact Form</h3>
+            <h3 class="text-2xl font-bold mb-2 text-center">
+              University Application Enquiry
+            </h3>
+            <p class="text-center text-sm text-slate-400 mb-6">
+              Complete the form below to get support with your application.
+            </p>
             <form method="POST" class="space-y-6">
-              <!-- Full Name -->
+              <!-- Name -->
               <div>
                 <label for="name" class="block text-slate-300 mb-1"
                   >Full Name</label
@@ -250,7 +278,7 @@
                   id="name"
                   name="name"
                   required
-                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -265,8 +293,23 @@
                   id="email"
                   name="email"
                   required
-                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
                   placeholder="Enter your email"
+                />
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label for="phone" class="block text-slate-300 mb-1"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
+                  placeholder="e.g. +44 7123 456 789"
                 />
               </div>
 
@@ -279,12 +322,40 @@
                   type="text"
                   id="nationality"
                   name="nationality"
-                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
                   placeholder="e.g. Nigerian, Indian"
                 />
               </div>
 
-              <!-- Interested Course -->
+              <!-- Preferred Intake -->
+              <div>
+                <label for="intake" class="block text-slate-300 mb-1"
+                  >Preferred Intake</label
+                >
+                <input
+                  type="text"
+                  id="intake"
+                  name="intake"
+                  placeholder="e.g. September 2025"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <!-- Qualification -->
+              <div>
+                <label for="qualification" class="block text-slate-300 mb-1"
+                  >Highest Qualification</label
+                >
+                <input
+                  type="text"
+                  id="qualification"
+                  name="qualification"
+                  placeholder="e.g. WAEC, BSc, HND"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
+                />
+              </div>
+
+              <!-- Course -->
               <div>
                 <label for="course" class="block text-slate-300 mb-1"
                   >Course Interested In</label
@@ -292,7 +363,7 @@
                 <select
                   id="course"
                   name="course"
-                  class="w-full py-3 px-4 rounded-md bg-black text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  class="w-full py-3 px-4 rounded-md bg-black text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
                 >
                   <option disabled selected>Select a course</option>
                   <option>Business Administration (BBA)</option>
@@ -302,6 +373,20 @@
                   <option>IELTS Preparation</option>
                   <option>Other...</option>
                 </select>
+              </div>
+
+              <!-- Destination -->
+              <div>
+                <label for="destination" class="block text-slate-300 mb-1"
+                  >Preferred Study Destination</label
+                >
+                <input
+                  type="text"
+                  id="destination"
+                  name="destination"
+                  placeholder="e.g. UK, Canada"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
+                />
               </div>
 
               <!-- Message -->
@@ -314,7 +399,7 @@
                   name="message"
                   rows="4"
                   required
-                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:ring-indigo-500 focus:outline-none"
                   placeholder="Write your message..."
                 ></textarea>
               </div>
@@ -323,7 +408,7 @@
               <div>
                 <button
                   type="submit"
-                  class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-6 rounded-md transition"
+                  class="w-full bg-white text-black hover:bg-black hover:text-white hover:border-2 font-semibold py-3 px-6 rounded-md transition"
                 >
                   Send Message
                 </button>
@@ -335,6 +420,11 @@
 
       <!-- Google Map -->
       <section class="w-full h-96">
+        <h2
+          class="text-center text-white text-2xl py-4 bg-gradient-to-r from-black to-white/5"
+        >
+          Visit Our Office
+        </h2>
         <iframe
           src="https://www.google.com/maps?q=82+James+Carter+Road,+Mildenhall,+UK&output=embed"
           width="100%"
@@ -349,7 +439,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black border-t border-white/10 py-16">
+    <footer class="bg-black border-t border-white/10 py-20">
       <div class="container mx-auto px-6 sm:px-8 lg:px-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="space-y-4">
@@ -500,7 +590,7 @@
               </li>
               <li>
                 <a
-                  href="apply.html"
+                  href="contact.html"
                   class="text-white/70 hover:font-extrabold transition-colors"
                   >Apply Now</a
                 >

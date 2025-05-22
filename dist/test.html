@@ -1,25 +1,185 @@
-<a href="index.html" class="flex items-center space-x-2">
-  <div class="p-2">
-    <!-- Your SVG -->
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
-      fill="white"
-      transform="rotate(180)"
-      viewBox="0 0 32 32"
-    >
-      <path
-        d="M23.504 8.78c-2.015-.745-3.967-.522-5.879.371-.18.084-.343.215-.634.229.718-1.897 1.157-3.838 2.633-5.38h-7.211c.619.864 1.222 1.65 1.569 2.582s.673 1.841 1.021 2.802c-.301-.029-.458-.151-.624-.229-1.47-.675-2.989-.999-4.613-.72-2.32.398-4.014 1.795-4.37 4.007-.157.969.015 1.897.357 2.802.687 1.831 1.879 3.297 3.298 4.607 2.172 2.015 4.109 4.226 5.803 6.621l.089.132c.322.458 1.03 1.395 1.03 1.395l.631-.874c.937-1.461 2.097-2.833 3.225-4.131 1.103-1.269 2.331-2.449 3.573-3.602 1.449-1.344 2.543-2.943 3.069-4.875.686-2.515-.523-4.835-2.967-5.738z"
+<div>
+  <!-- Contact Hero -->
+  <section class="relative py-32 text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://res.cloudinary.com/temmarie/image/upload/v1747670803/young-students-learning-together-group-study_h6im0q.webp"
+        alt="Students Group Study"
+        class="w-full h-full object-cover"
       />
-    </svg>
-  </div>
-  <span
-    class="text-4xl font-bold bg-gradient-to-r from-white/70 to-white bg-clip-text text-transparent tracking-wider uppercase"
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/80 to-indigo-900/80"
+      ></div>
+    </div>
+    <div class="relative z-10 container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch with Us</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+        Whether you're ready to apply, need help with a course, or want to
+        connect—reach out anytime.
+      </p>
+      <a
+        href="#contact-form"
+        class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section
+    class="bg-gradient-to-b from-indigo-950 via-slate-950 to-black text-white py-20 px-4 sm:px-8 lg:px-16"
+    id="contact-form"
   >
-    Tisah
-  </span>
-  <small class="text-white/70 text-lg"
-    >The International Student Admissions Hub</small
-  >
-</a>
+    <div
+      class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"
+    >
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Contact Details</h2>
+        <p class="text-slate-400 mb-8 text-lg">
+          Reach out to us for course information, application help, or general
+          inquiries. We’re here to guide your academic journey.
+        </p>
+        <ul class="space-y-4 text-slate-300 text-md">
+          <li>
+            <strong class="text-indigo-400">Email:</strong>
+            <a href="mailto:info@tmace.org" class="hover:underline"
+              >info@tmace.org</a
+            >
+          </li>
+          <li>
+            <strong class="text-indigo-400">Phone:</strong>
+            <a href="tel:01474612085" class="hover:underline">01474 612085</a>
+          </li>
+          <li>
+            <strong class="text-indigo-400">Address:</strong><br />
+            TM ACE Limited<br />
+            Unit A, 82 James Carter Road<br />
+            Mildenhall, IP28 7DE
+          </li>
+        </ul>
+
+        <div
+          class="mt-10 text-indigo-300 text-sm border-t border-white/10 pt-6"
+        >
+          <p>
+            <strong>Note:</strong> We do not offer visa application services
+            directly, but we can connect you with trusted specialists who do.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div
+        class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-xl shadow-xl text-white"
+      >
+        <h3 class="text-2xl font-bold mb-6 text-center">Contact Form</h3>
+        <form method="POST" class="space-y-6">
+          <!-- Full Name -->
+          <div>
+            <label for="name" class="block text-slate-300 mb-1"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-slate-300 mb-1"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <!-- Nationality -->
+          <div>
+            <label for="nationality" class="block text-slate-300 mb-1"
+              >Nationality</label
+            >
+            <input
+              type="text"
+              id="nationality"
+              name="nationality"
+              class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="e.g. Nigerian, Indian"
+            />
+          </div>
+
+          <!-- Interested Course -->
+          <div>
+            <label for="course" class="block text-slate-300 mb-1"
+              >Course Interested In</label
+            >
+            <select
+              id="course"
+              name="course"
+              class="w-full py-3 px-4 rounded-md bg-black text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+              <option disabled selected>Select a course</option>
+              <option>Business Administration (BBA)</option>
+              <option>MBA with Internship</option>
+              <option>BSc Computer Science</option>
+              <option>Health Sciences Foundation</option>
+              <option>IELTS Preparation</option>
+              <option>Other...</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-slate-300 mb-1"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="w-full py-3 px-4 rounded-md bg-black/40 text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-6 rounded-md transition"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="w-full h-96">
+    <iframe
+      src="https://www.google.com/maps?q=82+James+Carter+Road,+Mildenhall,+UK&output=embed"
+      width="100%"
+      height="100%"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="border-t-4 border-indigo-500"
+    ></iframe>
+  </section>
+</div>
