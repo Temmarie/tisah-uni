@@ -79,7 +79,7 @@
               >Courses</a
             >
 
-             <a
+            <a
               href="universities.html"
               class="text-white/80 nav-link transition-colors"
               >Universities</a
@@ -129,7 +129,6 @@
           >Universities</a
         >
 
-
         <a href="contact.html" class="block text-white/80nav-link py-2"
           >Contact</a
         >
@@ -161,8 +160,7 @@
     </header>
 
     <main class="bg-black">
-
-            <!-- Hero -->
+      <!-- Hero -->
       <section class="relative py-32 text-white overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
@@ -181,7 +179,7 @@
             Explore Top Universities in the UK
           </h1>
           <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
-            Discover your dream course and unlock your future potential
+            Discover your dream school and unlock your future potential
           </p>
           <a
             href="courses.html"
@@ -191,89 +189,109 @@
           </a>
         </div>
       </section>
-     <section class="mt-16 text-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6">
-      <h1 class="text-2xl font-bold">UK Universities</h1>
-    </div>
-  </section>
 
-  <!-- Filters -->
-<!-- Filters -->
-<section class="mb-10">
-  <div class="bg-black p-6 shadow-xl border border-white/70">
-    <h3 class="text-xl font-semibold text-white mb-4">Filter Universities</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Location Filter -->
-      <div>
-        <label for="location" class="block text-sm font-medium text-gray-300 mb-1">
-          Location
-        </label>
-        <select
-          id="location"
-          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+      <!-- unis -->
+      <section class="mt-16 text-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+          <h1 class="text-2xl font-bold">UK Universities</h1>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <!-- Filters -->
+      <section class="mb-10">
+        <div
+          class="max-w-7xl mx-auto px-4 bg-black p-6 shadow-xl border border-white/70"
         >
-          <option value="">All</option>
-          <option value="England">England</option>
-          <option value="Scotland">Scotland</option>
-          <option value="Wales">Wales</option>
-          <option value="Northern Ireland">Northern Ireland</option>
-        </select>
-      </div>
+          <h3 class="text-xl font-semibold text-white mb-4">
+            Filter Universities
+          </h3>
 
-      <!-- Tuition Filter -->
-      <div>
-        <label for="tuition" class="block text-sm font-medium text-gray-300 mb-1">
-          Max Tuition Fees (£)
-        </label>
-        <input
-          type="number"
-          id="tuition"
-          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
-          placeholder="e.g. 15000"
-        />
-      </div>
+          <div class="w-full max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Location Filter -->
+              <div>
+                <label
+                  for="location"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Location
+                </label>
+                <select
+                  id="location"
+                  class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+                >
+                  <option value="">All</option>
+                  <option value="England">England</option>
+                  <option value="Scotland">Scotland</option>
+                  <option value="Wales">Wales</option>
+                  <option value="Northern Ireland">Northern Ireland</option>
+                </select>
+              </div>
 
-      <!-- IELTS Filter -->
-      <div>
-        <label for="ielts" class="block text-sm font-medium text-gray-300 mb-1">
-          Minimum IELTS
-        </label>
-        <select
-          id="ielts"
-          class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
-        >
-          <option value="">Any</option>
-          <option value="4.0">4.0</option>
-          <option value="5.0">5.0</option>
-          <option value="6.0">6.0</option>
-          <option value="6.5">6.5</option>
-          <option value="7.0">7.0</option>
-        </select>
-      </div>
+              <!-- Tuition Filter -->
+              <div>
+                <label
+                  for="tuition"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Max Tuition Fees (£)
+                </label>
+                <input
+                  type="number"
+                  id="tuition"
+                  class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+                  placeholder="e.g. 15000"
+                />
+              </div>
 
-    </div>
+              <!-- IELTS Filter -->
+              <div>
+                <label
+                  for="ielts"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Minimum IELTS
+                </label>
+                <select
+                  id="ielts"
+                  class="bg-black text-white border border-gray-700 focus:ring-2 focus:ring-white/70 focus:border-white/70 rounded-lg w-full py-2 px-3 shadow-sm transition"
+                >
+                  <option value="">Any</option>
+                  <option value="4.0">4.0</option>
+                  <option value="5.0">5.0</option>
+                  <option value="6.0">6.0</option>
+                  <option value="6.5">6.5</option>
+                  <option value="7.0">7.0</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
-    <!-- Apply Button -->
-    <div class="mt-6 text-right">
-      <button
-        id="filterBtn"
-        class="inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white hover:border-2   font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-200"
-      >
-        <i class="fas fa-filter"></i>
-        Apply Filters
-      </button>
-    </div>
-  </div>
-</section>
+          <!-- Apply Button -->
+          <div class="mt-6 text-right">
+            <button
+              id="filterBtn"
+              class="inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white hover:border-2 font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-200"
+            >
+              <i class="fas fa-filter"></i>
+              Apply Filters
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <!-- University List -->
 
-  <!-- University List -->
-  <section id="university-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- University cards will be injected here by JavaScript -->
-  </section>
-
-        <!-- University cards will be injected here by JavaScript -->
+      <section class="container mx-auto px-4">
+        <div class="w-full max-w-7xl mx-auto">
+          <div
+            id="university-list"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            <!-- University cards will be injected here by JavaScript -->
+          </div>
+        </div>
       </section>
     </main>
     <!-- Footer -->
@@ -564,6 +582,6 @@
       </div>
     </footer>
     <script src="assets/js/unis.js"></script>
-      <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

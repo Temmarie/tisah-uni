@@ -133,5 +133,165 @@
     "satisfaction": 82,
     "ranking": 30,
     "image": "https://www.york.ac.uk/.well-known/Uni-of-York-black.jpg"
+  },
+  {
+    "name": "University of East London",
+    "location": "London, England",
+    "tuition": {
+      "undergraduate": 13840,
+      "postgraduate": 13840
+    },
+    "ielts": 6.0,
+    "satisfaction": 83,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 116,
+      "the_world": null
+    },
+    "image": "https://www.uel.ac.uk/sites/default/files/uel-logo.png"
+  },
+  {
+    "name": "Birmingham City University",
+    "location": "Birmingham, England",
+    "tuition": {
+      "undergraduate": 13000,
+      "postgraduate": 13000
+    },
+    "ielts": 6.0,
+    "satisfaction": 84,
+    "ranking": {
+      "qs_world": 1001,
+      "complete_guide_uk": 82,
+      "the_world": null
+    },
+    "image": "https://www.bcu.ac.uk/__data/assets/image/0020/1803/BCU-logo.png"
+  },
+  {
+    "name": "Birkbeck, University of London",
+    "location": "London, England",
+    "tuition": {
+      "undergraduate": 13000,
+      "postgraduate": 14000
+    },
+    "ielts": 6.5,
+    "satisfaction": 90,
+    "ranking": {
+      "qs_world": 374,
+      "complete_guide_uk": 115,
+      "the_world": null
+    },
+    "image": "https://www.bbk.ac.uk/assets/images/logo.png"
+  },
+  {
+    "name": "University of Chester",
+    "location": "Chester, England",
+    "tuition": {
+      "undergraduate": 14450,
+      "postgraduate": 15000
+    },
+    "ielts": 6.0,
+    "satisfaction": 85,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 97,
+      "the_world": null
+    },
+    "image": "https://www1.chester.ac.uk/sites/default/files/2019-11/uoc-logo.png"
+  },
+  {
+    "name": "University of the West of Scotland",
+    "location": "Paisley, Scotland",
+    "tuition": {
+      "undergraduate": 14500,
+      "postgraduate": 17250
+    },
+    "ielts": 6.0,
+    "satisfaction": 82,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 121,
+      "the_world": null
+    },
+    "image": "https://www.uws.ac.uk/media/4563/uws-logo.png"
+  },
+  {
+    "name": "Anglia Ruskin University",
+    "location": "Cambridge, Chelmsford, and Peterborough, England",
+    "tuition": {
+      "undergraduate": 14000,
+      "postgraduate": 14200
+    },
+    "ielts": 6.0,
+    "satisfaction": 90,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 117,
+      "the_world": null
+    },
+    "image": "https://aru.ac.uk/-/media/images/logo/aru-logo.png"
+  },
+  {
+    "name": "Middlesex University",
+    "location": "London, England",
+    "tuition": {
+      "undergraduate": 16600,
+      "postgraduate": 16600
+    },
+    "ielts": 6.0,
+    "satisfaction": 80,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 111,
+      "the_world": null
+    },
+    "image": "https://www.mdx.ac.uk/__data/assets/image/0020/1803/mdx-logo.png"
+  },
+  {
+    "name": "Ulster University (London & Birmingham)",
+    "location": "London and Birmingham, England",
+    "tuition": {
+      "undergraduate": 17810,
+      "postgraduate": 38550
+    },
+    "ielts": 6.0,
+    "satisfaction": 87,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 42,
+      "the_world": null
+    },
+    "image": "https://www.ulster.ac.uk/__data/assets/image/0020/1803/ulster-logo.png"
+  },
+  {
+    "name": "University of the West of England",
+    "location": "Bristol, England",
+    "tuition": {
+      "undergraduate": 15850,
+      "postgraduate": 15850
+    },
+    "ielts": 6.0,
+    "satisfaction": 77,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 58,
+      "the_world": null
+    },
+    "image": "https://www.uwe.ac.uk/__data/assets/image/0020/1803/uwe-logo.png"
+  },
+  {
+    "name": "University of Suffolk",
+    "location": "Ipswich, England",
+    "tuition": {
+      "undergraduate": 6570,
+      "postgraduate": 6570
+    },
+    "ielts": 6.0,
+    "satisfaction": 85,
+    "ranking": {
+      "qs_world": null,
+      "complete_guide_uk": 114,
+      "the_world": null
+    },
+    "image": "https://www.uos.ac.uk/sites/default/files/uos-logo.png"
   }
 ]

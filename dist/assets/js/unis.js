@@ -18,18 +18,18 @@ function renderUniversities(data) {
   data.forEach((university) => {
     const card = document.createElement("div");
     card.className =
-      "bg-white p-4 rounded-lg shadow backdrop-blur-sm flex flex-col h-full";
+      "border-2 border-white/70 p-4 rounded-lg shadow backdrop-blur-sm flex flex-col h-full";
     card.innerHTML = `
-    <div class="h-48 mb-4">
+    <div class="h-40 mb-4">
       <img src="${university.image}" alt="${university.name}" class="w-full h-full object-contain rounded-md">
     </div>
-    <h2 class="text-black text-xl font-semibold mb-2">${university.name}</h2>
+    <h2 class="text-white text-xl font-semibold mb-2">${university.name}</h2>
     <div class="flex-grow overflow-y-auto mb-4">
-      <p class="text-sm text-gray-600 mb-1"><strong>Location:</strong> ${university.location}</p>
-      <p class="text-sm text-gray-600 mb-1"><strong>Tuition Fees:</strong> £${university.tuition}</p>
-      <p class="text-sm text-gray-600 mb-1"><strong>IELTS Requirement:</strong> ${university.ielts}</p>
-      <p class="text-sm text-gray-600 mb-1"><strong>Student Satisfaction:</strong> ${university.satisfaction}%</p>
-      <p class="text-sm text-gray-600 mb-1"><strong>Ranking:</strong> ${university.ranking}</p>
+      <p class="text-sm text-white/70 mb-1"><strong>Location:</strong> ${university.location}</p>
+      <p class="text-sm text-white/70 mb-1"><strong>Tuition Fees:</strong> £${university.tuition}</p>
+      <p class="text-sm text-white/70 mb-1"><strong>IELTS Requirement:</strong> ${university.ielts}</p>
+      <p class="text-sm text-white/70 mb-1"><strong>Student Satisfaction:</strong> ${university.satisfaction}%</p>
+      <p class="text-sm text-white/70 mb-1"><strong>Ranking:</strong> ${university.ranking}</p>
     </div>
   `;
     universityList.appendChild(card);
