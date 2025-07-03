@@ -1548,6 +1548,15 @@ body {
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .slide-up {
   animation: slideUp 0.5s ease-in-out;
 }
@@ -1570,15 +1579,6 @@ body {
 .slideshow img.active {
   opacity: 1;
   transform: scale(1.1);
-}
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 @property --tw-translate-x {
   syntax: "*";

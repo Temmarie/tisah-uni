@@ -1,7 +1,6 @@
 // DOM Elements
 const universityList = document.getElementById("university-list");
 const locationFilter = document.getElementById("location");
-const tuitionFilter = document.getElementById("tuition");
 const ieltsFilter = document.getElementById("ielts");
 const filterBtn = document.getElementById("filterBtn");
 
@@ -26,7 +25,6 @@ function renderUniversities(data) {
     <h2 class="text-white text-xl font-semibold mb-2">${university.name}</h2>
     <div class="flex-grow overflow-y-auto mb-4">
       <p class="text-sm text-white/70 mb-1"><strong>Location:</strong> ${university.location}</p>
-      <p class="text-sm text-white/70 mb-1"><strong>Tuition Fees:</strong> £${university.tuition}</p>
       <p class="text-sm text-white/70 mb-1"><strong>IELTS Requirement:</strong> ${university.ielts}</p>
       <p class="text-sm text-white/70 mb-1"><strong>Student Satisfaction:</strong> ${university.satisfaction}%</p>
       <p class="text-sm text-white/70 mb-1"><strong>Ranking:</strong> ${university.ranking}</p>
@@ -38,17 +36,12 @@ function renderUniversities(data) {
 // Function to filter universities based on selected criteria
 function filterUniversities() {
   const selectedLocation = locationFilter.value;
-  const maxTuition = parseFloat(tuitionFilter.value);
   const minIELTS = parseFloat(ieltsFilter.value);
 
   let filtered = universities;
 
   if (selectedLocation) {
     filtered = filtered.filter((u) => u.location === selectedLocation);
-  }
-
-  if (!isNaN(maxTuition)) {
-    filtered = filtered.filter((u) => u.tuition <= maxTuition);
   }
 
   if (!isNaN(minIELTS)) {
